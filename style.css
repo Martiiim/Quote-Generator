@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5vw; /* Adjust padding using viewport width units */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+}
+
+#quoteTextbox {
+    height: 5vw; /* Adjust height using viewport width units */
+    padding: 2vw; /* Adjust padding using viewport width units */
+    border: 1px solid #504f4f;
+    border-radius: 8px;
+    color: #504f4f;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    margin-bottom: 2vw; /* Adjust margin using viewport width units */
+}
+
+button {
+    height: 5vw; /* Adjust height using viewport width units */
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 1vw 2vw; /* Adjust padding using viewport width units */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.quote {
+    font-size: 2vw; /* Adjust font size using viewport width units */
+    margin-bottom: 3vw; /* Adjust margin using viewport width units */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-effect {
+    animation: typing 3s steps(40, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .quote-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-container {
+        width: 95%;
+    }
+}
